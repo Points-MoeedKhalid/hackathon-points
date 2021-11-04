@@ -48,7 +48,7 @@ export class AppComponent implements  OnInit{
   
     var result = [];
 
-    var headers=lines[0].split(",");
+    var headers=lines[0].replace(/"/g,'').split(",");
     this.headerData = headers;
     for(var i=1;i<lines.length;i++){
   
@@ -56,7 +56,8 @@ export class AppComponent implements  OnInit{
         var currentline=lines[i].split(",");
   
         for(var j=0;j<headers.length;j++){
-            obj[headers[j]] = currentline[j];
+            console.log(currentline[j])
+            obj[headers[j]] = currentline[j].replace(/"/g,'');
         }
   
         result.push(obj);
