@@ -13,8 +13,17 @@
   <tbody>
     <ng-container *ngIf="data_array?.length">
     <tr *ngFor = "let data of data_array">
-      <td *ngFor = "let c_header of headerData">
-        <i class="fas fa-check-square goldiconcolor"  [ngClass]="{'goldiconcolor': data[c_header] > 0, 'silvericoncolor' : data[c_header] == 0 }"></i>
+      <td *ngFor = "let c_header of headerData; first as isFirst">
+        <div style="text-transform: capitalize;" *ngIf="isFirst">
+          {{data[c_header]}}
+        </div>
+    
+        <!-- Negation operator-->
+        <div *ngIf="!isFirst">
+          <i class="fas fa-check-square goldiconcolor"  [ngClass]="{'goldiconcolor': data[c_header] > 0, 'silvericoncolor' : data[c_header] == 0 }"></i>
+        </div>
+
+
       </td>
     </tr>
   </ng-container>
