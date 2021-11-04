@@ -14,7 +14,7 @@
     <ng-container *ngIf="data_array?.length">
     <tr *ngFor = "let data of data_array">
       <td *ngFor = "let c_header of headerData">
-        {{data[c_header]}}
+        <i class="fas fa-check-square goldiconcolor"  [ngClass]="{'goldiconcolor': data[c_header] > 0, 'silvericoncolor' : data[c_header] == 0 }"></i>
       </td>
     </tr>
   </ng-container>

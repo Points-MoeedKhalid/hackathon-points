@@ -1,6 +1,8 @@
 import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 // import {csvToJson} from 'convert-csv-to-json'
+// import { faCheck } from '@fortawesome/free-solid-svg-icons';
+
 
 declare let $: any;
 @Component({
@@ -12,6 +14,8 @@ export class AppComponent implements  OnInit{
   name = 'Angular';
   data_array;
   headerData = [];
+  // faCheck = faCheck;
+
 
   ngOnInit() {
 
