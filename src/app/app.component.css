@@ -53,12 +53,63 @@ td {
 }
 
 .container {
+  display: grid;
+  grid-template-areas: 
+    "side-bar header header header header"
+    "side-bar main main main main"
+    "side-bar main main main main";
+  grid-template-rows: 88px;
+}
+
+.header-bar {
+  grid-area: header;
+  border-bottom: #abacab double 1px;
+  padding: 20px;
+}
+
+.header-bar-title {
   display: flex;
-  height: 100%;
+  align-items: center;
+  padding-top: 10px;
+  color: #5c5e5d;
+}
+
+.header-bar-title span {
+  padding-left: 20px;
+}
+
+.header-bar-icon {
+  width: 30px;
 }
 
 .app {
-  padding: 20px;
+  grid-area: main;
+  padding: 0 20px;
+}
+
+.side-nav-bar {
+  grid-area: side-bar;
+  height: 100vh;
+  width: 60px;
+  background: rgb(120, 144, 156);
+}
+
+.side-nav-bar-links ul {
+  border-top: white solid 1px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.side-nav-bar-links ul li {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.side-nav-bar-links ul li:hover {
+  background-color: rgb(77, 201, 238);
 }
 
 .points-logo-container {
@@ -79,29 +130,3 @@ td {
 .points-logo-color-2 {
   fill: rgb(255, 255, 255);
 }
-
-.side-nav-bar {
-  height: 100vh;
-  width: 100px;
-  background: rgb(120, 144, 156);
-}
-
-.side-nav-bar-links ul {
-  border-top: white solid 1px;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.side-nav-bar-links ul li {
-  list-style-type: none;
-  margin: 0;
-  padding: 10px 15px;
-}
-
-.side-nav-bar-links ul li:hover {
-  background-color: rgb(77, 201, 238);
-}
-  /* background-color: black;
-  color: white; */
-
