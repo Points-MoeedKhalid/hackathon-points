@@ -32,7 +32,7 @@ export class AppComponent implements  OnInit{
   constructor(public httpClient: HttpClient){}
 
   getData(){
-    this.httpClient.get('assets/tenants_and_products.csv', { responseType: 'text' }).subscribe(
+    this.httpClient.get('assets/partners_touchpoints_products_for_ofer - Sheet2 - partners_touchpoints_products_for_ofer - Sheet2.csv', { responseType: 'text' }).subscribe(
       data => {
             this.data_array = this.csvJSON(data);
       }

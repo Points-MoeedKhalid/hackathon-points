@@ -11,6 +11,10 @@ p {
 .silvericoncolor {
   color: silver;
 }
+.greeniconcolor {
+  color: green;
+}
+
 
 table {
   table-layout: fixed;
@@ -100,4 +104,4 @@ td {
 }
   /* background-color: black;
   color: white; */
-}
+
