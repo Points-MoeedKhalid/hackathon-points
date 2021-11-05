@@ -1,15 +1,20 @@
 p {
-    font-family: Lato;
-  }
+  font-family: Lato;
+}
 
-  .blackiconcolor {color:black;}
-  .goldiconcolor {color:gold;}
-  .silvericoncolor {color:silver;}
+.blackiconcolor {
+  color: black;
+}
+.goldiconcolor {
+  color: gold;
+}
+.silvericoncolor {
+  color: silver;
+}
 
-  table
-{
-    table-layout: fixed;
-    width: 20;
+table {
+  table-layout: fixed;
+  width: 20;
 }
 td {
   text-align: center;
@@ -22,18 +27,77 @@ td {
   width: 100%;
 }
 
-#hackathon td, #hackathon th {
+#hackathon td,
+#hackathon th {
   border: 1px solid #ddd;
   padding: 8px;
 }
 
-#hackathon tr:nth-child(even){background-color: #f2f2f2;}
+#hackathon tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
-#hackathon tr:hover {background-color: #ddd;}
+#hackathon tr:hover {
+  background-color: #ddd;
+}
 
 #hackathon th {
   padding-top: 12px;
   padding-bottom: 12px;
+  background-color: black;
+  color: white;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.app {
+  padding: 20px;
+}
+
+.points-logo-container {
+  background-color: rgb(62, 72, 78);
+  padding: 14px 0;
+}
+
+.points-logo {
+  overflow: hidden;
+  width: 22px;
+  margin: 10px auto;
+}
+
+.points-logo-color-1 {
+  fill: rgb(77, 201, 238);
+}
+
+.points-logo-color-2 {
+  fill: rgb(255, 255, 255);
+}
+
+.side-nav-bar {
+  height: 100vh;
+  width: 100px;
+  background: rgb(120, 144, 156);
+}
+
+.side-nav-bar-links ul {
+  border-top: white solid 1px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.side-nav-bar-links ul li {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 15px;
+}
+
+.side-nav-bar-links ul li:hover {
+  background-color: rgb(77, 201, 238);
+}
   /* background-color: black;
   color: white; */
 }
